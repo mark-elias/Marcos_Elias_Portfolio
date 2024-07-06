@@ -1,3 +1,6 @@
+import { Link } from 'react-scroll';
+
+
 interface Props {
   siteName: string;
   listItems: string[];

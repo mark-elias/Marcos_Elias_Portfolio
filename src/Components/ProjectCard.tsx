@@ -1,15 +1,17 @@
 interface Props {
   title: string;
-  image: string;
-  description?: string;
+  image?: string;
+  video?: string;
+  description: string;
   description2?: string;
   siteLink?: string;
   githubLink?: string;
-  badges?: string[];
+  badges: string[];
 }
 function ProjectCard({
   title,
   image,
+  video,
   description,
   description2,
   siteLink,
@@ -29,6 +31,10 @@ function ProjectCard({
       return "bg-orange-500 text-white";
     } else if (badge === "typescript") {
       return "bg-blue-600 text-white";
+    } else if (badge === "html") {
+      return "bg-orange-500 text-white";
+    } else if (badge === "css") {
+      return "bg-blue-700 text-white";
     } else {
       return "bg-green-500 text-white";
     }
@@ -36,16 +42,26 @@ function ProjectCard({
   return (
     <div className="rounded-lg border-2 border-slate-200 p-5 w-full shadow-2xl md:w-80 lg:w-96 ">
       <h3 className="text-blue-500">{title}</h3>
-      <img src={image} alt={title} className="" />
+      {image && <img src={image} alt={title} />}
+      {video && (
+        <video src={video} controls>
+          Your browser does not support the video tag.
+        </video>
+      )}
+
       <p>{description}</p>
       <p>{description2}</p>
       <div className="flex flex-row gap-5">
-        <a href={siteLink} target="_blank">
-          View Website
-        </a>
-        <a href={githubLink} target="_blank">
-          GitHub Repo
-        </a>
+        {siteLink && (
+          <a href={siteLink} target="_blank">
+            View Website
+          </a>
+        )}
+        {githubLink && (
+          <a href={githubLink} target="_blank">
+            GitHub Repo
+          </a>
+        )}
       </div>
       <p className="my-3">Made with:</p>
       {badges?.map((element) => (
