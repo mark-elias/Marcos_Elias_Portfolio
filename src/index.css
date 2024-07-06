@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-size: 20px;
+    font-weight: bold;
+}
+h1{
+    color: #1C64F2;
+    font-size: 35px;
+}
+h2{
+    color: #0E9F6E;
+    font-size: 30px;
+}
+a{
+    color: #E74694;
+}
+span{
+    color: #1C64F2;
+    
+}
