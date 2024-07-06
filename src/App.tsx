@@ -1,6 +1,8 @@
 import AboutMe from "./Components/AboutMe";
 import Contact from "./Components/Contact";
 import NavBar from "./Components/NavBar";
+import Experience from "./Components/Experience";
+
 import ProjectCard from "./Components/ProjectCard";
 
 import Footer from "./Components/Footer";
@@ -53,7 +55,8 @@ function App() {
       <main className="mx-3 md:mx-16 lg:mx-24 xl:mx-32">
         <Contact></Contact>
         <AboutMe></AboutMe>
-        <div>
+        <Experience></Experience>
+        <section id="projects">
           <h2>Projects</h2>
           <div className="flex flex-row flex-wrap gap-5">
             <ProjectCard
@@ -142,7 +145,7 @@ function App() {
               badges={["Arduino", "C++"]}
             ></ProjectCard>
           </div>
-        </div>
+        </section>
       </main>
       <Footer></Footer>
     </>

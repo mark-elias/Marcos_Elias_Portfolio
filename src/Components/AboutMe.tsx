@@ -1,11 +1,11 @@
 function AboutMe() {
   return (
-    <>
+    <section id="about" className="border-2 border-green-700">
       <h2>About Me</h2>
       <p>
-        Hello, my name is <span>Marcos Elias</span> and I recently graduated
-        from San Diego State with a <span>Bachelors in Computer Science</span>.
-        I like to both watch and play sports and I like to play the guitar.
+        Hello, my name is Marcos Elias and I recently graduated from San Diego
+        State with a Bachelors in Computer Science. I like to both watch and
+        play sports and I like to play the guitar.
       </p>
       <p>
         Currently, I am enrolled in Kreativstorm's Hands-On Training Program,
@@ -22,11 +22,11 @@ function AboutMe() {
         and proficiency in these areas.
       </p>
       <p>
-        My passion lies in <span>Front-End Web Development</span>, and I am
-        seeking an entry-level position to gain hands-on experience and refine
-        my expertise.
+        My passion lies in Front-End Web Development, and I am seeking an
+        entry-level position to gain hands-on experience and refine my
+        expertise.
       </p>
-    </>
+    </section>
   );
 }
 

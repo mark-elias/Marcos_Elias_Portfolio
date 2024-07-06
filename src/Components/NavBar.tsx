@@ -1,5 +1,4 @@
-import { Link } from 'react-scroll';
-
+import { Link } from "react-scroll";
 
 interface Props {
   siteName: string;
@@ -13,7 +12,15 @@ function NavBar({ siteName, listItems }: Props) {
         <ul className="flex justify-evenly gap-5">
           {listItems.map((element) => (
             <li key={element} className="hover:text-blue-600">
-              {element}
+              <Link
+                to={element.toLowerCase()}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="cursor-pointer hover:text-gray-400"
+              >
+                {element}
+              </Link>
             </li>
           ))}
         </ul>

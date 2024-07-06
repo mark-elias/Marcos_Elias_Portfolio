@@ -65,7 +65,7 @@ function ProjectCard({
       </div>
       <p className="my-3">Made with:</p>
       {badges?.map((element) => (
-        <span className={`mr-2 p-2 rounded-lg + ${badgeMaker(element)}`}>
+        <span key={element} className={`mr-2 p-2 rounded-lg + ${badgeMaker(element)}`}>
           {element}
         </span>
       ))}
