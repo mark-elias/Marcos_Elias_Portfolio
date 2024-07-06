@@ -1,6 +1,9 @@
 function Contact() {
   return (
-    <div className="flex flex-col justify-evenly gap-5 items-center border-red-500 border-2 p-5">
+    <section
+      id="contact"
+      className="flex flex-col justify-evenly gap-5 items-center border-red-500 border-2 p-5"
+    >
       <em>Future Web Dev</em>
       <h1 className="text-3xl">
         hello world, my name is <em className="text-blue-600">Marcos</em>
@@ -20,7 +23,7 @@ function Contact() {
       >
         LinkedIn
       </a>
-    </div>
+    </section>
   );
 }
 

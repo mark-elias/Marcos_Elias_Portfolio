@@ -2,9 +2,9 @@ import AboutMe from "./Components/AboutMe";
 import Contact from "./Components/Contact";
 import NavBar from "./Components/NavBar";
 import Experience from "./Components/Experience";
-
+import Education from "./Components/Education";
+import Skills from "./Components/Skills";
 import ProjectCard from "./Components/ProjectCard";
-
 import Footer from "./Components/Footer";
 // importing images
 import budgeterImage from "./Assets/images/screenshot_BudgeterProject.png";
@@ -21,7 +21,7 @@ import gameMenuVideo from "./Assets/videos/RollCharacter_Video - Made with Clipc
 import heatProjectVideo from "./Assets/videos/Project_Heat.mp4";
 
 function App() {
-  const listItems = ["Experience", "Projects", "Resume", "Skills", "About"];
+  const listItems = ["Education", "Skills", "Experience", "Projects", "Resume", "Skills", "About", "Contact"];
 
   const budgeterLink = "https://mark-elias.github.io/Budgeter.github.io/";
   const budgeterGitHub = "https://github.com/mark-elias/Budgeter.github.io";
@@ -55,7 +55,9 @@ function App() {
       <main className="mx-3 md:mx-16 lg:mx-24 xl:mx-32">
         <Contact></Contact>
         <AboutMe></AboutMe>
+        <Education></Education>
         <Experience></Experience>
+        <Skills></Skills>
         <section id="projects">
           <h2>Projects</h2>
           <div className="flex flex-row flex-wrap gap-5">
