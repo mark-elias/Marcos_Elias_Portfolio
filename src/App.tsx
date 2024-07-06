@@ -1,5 +1,12 @@
+import NavBar from "./Components/NavBar";
+
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  const listItems = ["Experience", "Projects", "Resume"];
+  return (
+    <>
+      <NavBar siteName="marcos elias" listItems={listItems}></NavBar>
+    </>
+  );
 }
 
 export default App;
