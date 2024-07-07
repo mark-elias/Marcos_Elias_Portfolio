@@ -40,38 +40,54 @@ function ProjectCard({
     }
   }
   return (
-    <div className="rounded-2xl p-2 w-full shadow-2xl md:w-80 lg:w-2/5 ">
-      <h3 className="text-blue-600 text-center text-xl mb-3">{title}</h3>
-      {image && <img src={image} alt={title} className="rounded-lg mb-2" />}
-      {video && (
-        <video src={video} controls className="rounded-lg mb-2">
-          Your browser does not support the video tag.
-        </video>
-      )}
-
-      <p className="">{description}</p>
-      <p className="">{description2}</p>
-      <div className="flex flex-row gap-6 my-3">
-        {siteLink && (
-          <a href={siteLink} target="_blank">
-            View Website
-          </a>
+    <div className="rounded-2xl shadow-2xl border-blue-600 border-1 w-96">
+      <div className="relative w-full h-44">
+        {image && (
+          <img
+            src={image}
+            alt={title}
+            className=" mb-2 rounded-t-2xl w-full h-full object-cover"
+          />
         )}
-        {githubLink && (
-          <a href={githubLink} target="_blank">
-            GitHub Repo
-          </a>
+        {video && (
+          <video
+            src={video}
+            controls
+            className="rounded-t-2xl mb-2 w-full h-full object-cover"
+          >
+            Your browser does not support the video tag.
+          </video>
         )}
       </div>
-      <p>Made with:</p>
-      {badges?.map((element) => (
-        <span
-          key={element}
-          className={`mr-1 px-2 py-1 text-sm rounded-lg + ${badgeMaker(element)}`}
-        >
-          {element}
-        </span>
-      ))}
+      <h3 className="text-blue-600 text-center text-xl mb-3">{title}</h3>
+
+      <div className="p-2">
+        <p className="font-normal mb-2 text-sm">{description}</p>
+        <p className="font-normal text-sm">{description2}</p>
+        <div className="flex flex-row gap-6 my-3">
+          {siteLink && (
+            <a href={siteLink} target="_blank" className="font-normal text-sm">
+              View Website
+            </a>
+          )}
+          {githubLink && (
+            <a href={githubLink} target="_blank" className="font-normal text-sm">
+              GitHub Repo
+            </a>
+          )}
+        </div>
+        <p className="text-sm font-normal">Made with:</p>
+        {badges?.map((element) => (
+          <span
+            key={element}
+            className={`mr-1 px-2 py-1 text-sm font-normal rounded-lg + ${badgeMaker(
+              element
+            )}`}
+          >
+            {element}
+          </span>
+        ))}
+      </div>
     </div>
   );
 }
