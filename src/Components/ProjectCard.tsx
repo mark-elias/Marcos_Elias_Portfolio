@@ -40,18 +40,18 @@ function ProjectCard({
     }
   }
   return (
-    <div className="rounded-lg border-2 border-slate-200 p-5 w-full shadow-2xl md:w-80 lg:w-96 ">
-      <h3 className="text-blue-500">{title}</h3>
-      {image && <img src={image} alt={title} />}
+    <div className="rounded-2xl p-2 w-full shadow-2xl md:w-80 lg:w-2/5 ">
+      <h3 className="text-blue-600 text-center text-xl mb-3">{title}</h3>
+      {image && <img src={image} alt={title} className="rounded-lg mb-2" />}
       {video && (
-        <video src={video} controls>
+        <video src={video} controls className="rounded-lg mb-2">
           Your browser does not support the video tag.
         </video>
       )}
 
-      <p>{description}</p>
-      <p>{description2}</p>
-      <div className="flex flex-row gap-5">
+      <p className="">{description}</p>
+      <p className="">{description2}</p>
+      <div className="flex flex-row gap-6 my-3">
         {siteLink && (
           <a href={siteLink} target="_blank">
             View Website
@@ -63,9 +63,12 @@ function ProjectCard({
           </a>
         )}
       </div>
-      <p className="my-3">Made with:</p>
+      <p>Made with:</p>
       {badges?.map((element) => (
-        <span key={element} className={`mr-2 p-2 rounded-lg + ${badgeMaker(element)}`}>
+        <span
+          key={element}
+          className={`mr-1 px-2 py-1 text-sm rounded-lg + ${badgeMaker(element)}`}
+        >
           {element}
         </span>
       ))}

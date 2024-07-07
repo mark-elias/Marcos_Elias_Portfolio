@@ -21,7 +21,12 @@ import gameMenuVideo from "./Assets/videos/RollCharacter_Video - Made with Clipc
 import heatProjectVideo from "./Assets/videos/Project_Heat.mp4";
 
 function App() {
-  const listItems = ["Education", "Skills", "Experience", "Projects", "Resume", "Skills", "About", "Contact"];
+  const listItems = [
+    "Skills",
+    "Experience",
+    "Projects",
+    "Contact",
+  ];
 
   const budgeterLink = "https://mark-elias.github.io/Budgeter.github.io/";
   const budgeterGitHub = "https://github.com/mark-elias/Budgeter.github.io";
@@ -52,7 +57,7 @@ function App() {
   return (
     <>
       <NavBar siteName="marcos elias" listItems={listItems}></NavBar>
-      <main className="mx-3 md:mx-16 lg:mx-24 xl:mx-32">
+      <main className="mx-3 md:mx-16 lg:mx-16 xl:mx-20">
         <Contact></Contact>
         <AboutMe></AboutMe>
         <Education></Education>
@@ -60,7 +65,7 @@ function App() {
         <Skills></Skills>
         <section id="projects">
           <h2>Projects</h2>
-          <div className="flex flex-row flex-wrap gap-5">
+          <div className="flex flex-row flex-wrap justify-center gap-10">
             <ProjectCard
               title="React Budgeter"
               image={budgeterImage}

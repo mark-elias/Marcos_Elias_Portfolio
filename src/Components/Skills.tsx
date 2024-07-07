@@ -1,15 +1,14 @@
-import React from "react";
 
 function Skills() {
   return (
     <section id="skills">
-      <h1>Skills</h1>
-      <ul>
+      <h2>Skills</h2>
+      <ul className="list-disc">
         <li>Languages: Javascript, HTML, CSS, Java, C++, C#, Python</li>
         <li>Version-Control: Git, GitHub, GitLab</li>
+        <li>Front-End Frameworks: React</li>
+        <li>CSS/UI Frameworks: Experience with Tailwind CSS, Bootstrap, Miligram</li>
         <li>Responsive Design</li>
-        <li>Front-End Frameworks: Experience with React.js</li>
-        <li>CSS/UI Frameworks: Experience with Tailwind CSS</li>
         <li>Relational Databases: Experience with mySQL</li>
         <li>Unity Game Development</li>
         <li>Arduino Programming</li>

@@ -2,23 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body{
+body{
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
 }
-h1{
-    color: #1C64F2;
-    font-size: 35px;
+section {
+    border: 2px red solid;
+    margin: 30px 0px 30px 0px;
+    padding: 10px;
 }
 h2{
-    color: #0E9F6E;
+    text-align: center;
     font-size: 30px;
-} */
+    color: rgb(0, 213, 78);
+    font-weight: 500;
+}
 a{
-    color: #1C64F2;
+    color: rgb(255, 4, 255);
     text-decoration: underline;
 }
-/* span{
-    color: #1C64F2;
-    
-} */

@@ -6,8 +6,8 @@ interface Props {
 }
 function NavBar({ siteName, listItems }: Props) {
   return (
-    <nav className="flex flex-col justify-around border-red-400 border-2 items-center p-5 gap-3 md:flex-row sticky top-0 bg-white">
-      <h1>{siteName}</h1>
+    <nav className="flex flex-col justify-around items-center p-5 gap-3 md:flex-row sticky top-0 bg-white shadow-lg rounded-2xl">
+      <h1 className="text-3xl font-extrabold text-blue-600">{siteName}</h1>
       <div>
         <ul className="flex justify-evenly gap-5">
           {listItems.map((element) => (
@@ -16,8 +16,8 @@ function NavBar({ siteName, listItems }: Props) {
                 to={element.toLowerCase()}
                 smooth={true}
                 duration={500}
-                offset={-70}
-                className="cursor-pointer hover:text-gray-400"
+                offset={-80}
+                className="cursor-pointer text-black"
               >
                 {element}
               </Link>
