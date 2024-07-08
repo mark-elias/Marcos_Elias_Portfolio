@@ -3,7 +3,6 @@ interface Props {
   image?: string;
   video?: string;
   description: string;
-  description2?: string;
   siteLink?: string;
   githubLink?: string;
   badges: string[];
@@ -13,7 +12,6 @@ function ProjectCard({
   image,
   video,
   description,
-  description2,
   siteLink,
   githubLink,
   badges,
@@ -63,7 +61,6 @@ function ProjectCard({
       <div className="px-5">
         <h3 className="text-center">{title}</h3>
         <p>{description}</p>
-        {/* <p>{description2}</p> */}
         <div className="flex flex-row gap-6 my-3">
           {siteLink && (
             <a href={siteLink} target="_blank">
