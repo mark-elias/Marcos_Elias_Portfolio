@@ -41,7 +41,7 @@ function ProjectCard({
   }
   return (
     <div className="rounded-2xl shadow-2xl border-blue-600 border-1 w-96">
-      <div className="relative w-full h-44">
+      <div className="relative w-full h-48">
         {image && (
           <img
             src={image}
@@ -59,9 +59,9 @@ function ProjectCard({
           </video>
         )}
       </div>
-      <h3 className="text-blue-600 text-center text-xl mb-3">{title}</h3>
 
       <div className="p-2">
+        <h3 className="text-blue-600 text-center text-xl mb-3">{title}</h3>
         <p className="font-normal mb-2 text-sm">{description}</p>
         <p className="font-normal text-sm">{description2}</p>
         <div className="flex flex-row gap-6 my-3">
@@ -71,7 +71,11 @@ function ProjectCard({
             </a>
           )}
           {githubLink && (
-            <a href={githubLink} target="_blank" className="font-normal text-sm">
+            <a
+              href={githubLink}
+              target="_blank"
+              className="font-normal text-sm"
+            >
               GitHub Repo
             </a>
           )}

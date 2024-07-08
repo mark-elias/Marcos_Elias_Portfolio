@@ -6,8 +6,12 @@ interface Props {
 }
 function NavBar({ siteName, listItems }: Props) {
   return (
-    <nav className="flex flex-col justify-around items-center p-5 md:flex-row sticky top-0 bg-white shadow-lg rounded-2xl z-10">
-      <h1 className="text-blue-600">{siteName}</h1>
+    <nav className="navBar">
+      <h1 className="font-black text-xl text-blue-600">
+        <Link to={"contact"} smooth={true} duration={500} offset={-80}>
+          {siteName}
+        </Link>
+      </h1>
       <div>
         <ul className="flex justify-evenly gap-10">
           {listItems.map((element) => (
