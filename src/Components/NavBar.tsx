@@ -9,7 +9,7 @@ function NavBar({ siteName, listItems }: Props) {
     <nav className="navBar">
       <h1>
         <Link
-          to={"contact"}
+          to={"hero"}
           smooth={true}
           duration={500}
           offset={-80}

@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 // ========== Media Imports
 // Images
 import budgeterImage from "../Assets/images/screenshot_BudgeterProject.png";
-import colorPickerImage from "../Assets/images/ColorPicker_screenshot.png";
+import colorPickerImage from "../Assets/images/colorPickerScreenShot.png";
 import rockPaperImage from "../Assets/images/RockPaperScissors_screenshot.png";
 import restaurantImage from "../Assets/images/RestaurantProject.png";
 // import portfolioImage from "./Assets/images/screenshot_portfolioWebsite.png";

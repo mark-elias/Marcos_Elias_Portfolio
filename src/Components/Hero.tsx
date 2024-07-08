@@ -1,6 +1,9 @@
-function Contact() {
+function Hero() {
   return (
-    <section id="contact" className="flex flex-col justify-evenly items-center mt-5">
+    <section
+      id="hero"
+      className="flex flex-col justify-evenly items-center mt-5"
+    >
       <em>Future Web Dev</em>
       <h1 className="mb-3 text-lg md:text-4xl">
         hello world, my name is <em className="text-blue-600">Marcos</em>
@@ -21,4 +24,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Hero;

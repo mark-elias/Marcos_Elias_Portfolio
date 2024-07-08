@@ -4,12 +4,12 @@ function Skills() {
       <h2>Skills</h2>
       <ul className="list-disc">
         <li>
-          Languages: Javascript, Typescript, HTML, CSS, Java, C++, C#, Python
+          Languages: Javascript, HTML, CSS, Java, C++, C#, Python, Typescript
         </li>
-        <li>Front-End Frameworks: React</li>
-        <li>Version-Control: Git, GitHub, GitLab</li>
+        <li>Frameworks: React</li>
+        <li>Version Control: Git, GitHub, GitLab</li>
         <li>
-          CSS/UI Frameworks: Experience with Tailwind CSS, Bootstrap, Miligram
+          CSS/UI Frameworks: Tailwind CSS, Bootstrap, Miligram
         </li>
         <li>Responsive Design</li>
         <li>Relational Databases: Experience with mySQL</li>
