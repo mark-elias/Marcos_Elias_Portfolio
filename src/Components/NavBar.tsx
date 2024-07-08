@@ -7,8 +7,14 @@ interface Props {
 function NavBar({ siteName, listItems }: Props) {
   return (
     <nav className="navBar">
-      <h1 className="font-black text-xl text-blue-600">
-        <Link to={"contact"} smooth={true} duration={500} offset={-80}>
+      <h1>
+        <Link
+          to={"contact"}
+          smooth={true}
+          duration={500}
+          offset={-80}
+          className="text-blue-600 cursor-pointer no-underline text-xl"
+        >
           {siteName}
         </Link>
       </h1>
@@ -21,7 +27,7 @@ function NavBar({ siteName, listItems }: Props) {
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="cursor-pointer text-black hover:text-blue-600 no-underline"
+                className="cursor-pointer font-semibold hover:text-blue-600 text-black no-underline"
               >
                 {element}
               </Link>

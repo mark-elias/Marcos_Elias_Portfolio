@@ -45,12 +45,11 @@ function Projects() {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <div className="flex flex-row flex-wrap justify-center gap-10">
+      <div className="flex flex-row flex-wrap gap-8">
         <ProjectCard
           title="React Budgeter"
           image={budgeterImage}
-          description="With this project I practiced how to work with an array of objects and how to display the objects as list items. I used updater functions and array methods to properly display content. This project helped me understand React a bit more."
-          description2="I also used Tailwind CSS for this project as it has always seemed interesting. It has its pros and cons but I will continue to try it out."
+          description="Budgeting project using an array of objects, React, useState, and Tailwind CSS. Implemented sorting by categories and displayed objects as list items."
           siteLink={budgeterLink}
           githubLink={budgeterGitHub}
           badges={["react", "vite", "git", "tailwind"]}
@@ -58,8 +57,7 @@ function Projects() {
         <ProjectCard
           title="React Color Picker"
           image={colorPickerImage}
-          description="At first I had trouble understanding React and why it is so popular. I am starting to get the hang of it now and it does make sites easier to make and maintain. React components are like Legos which is pretty cool. I want to remake my Portfolio site with React."
-          description2="I had some issues trying to deploy a React + Vite project to GitHub but I finally figured it out. I will be working on a To-Do List project next."
+          description="My first React project. I initially felt overwhelmed by React, but I am starting to understand its benefits. Successfully deployed React + Vite to GitHub."
           siteLink={pickerLink}
           githubLink={pickerGitHub}
           badges={["react", "vite", "git", "css"]}
@@ -67,8 +65,7 @@ function Projects() {
         <ProjectCard
           title="JS RockPaperScissors Game"
           image={rockPaperImage}
-          description="I expiremented with some fancy border radius styling to create some cool unique shapes. I added a scoreboard to keep track of the users points and the computers points. Ofcourse the project works on mobile screens and tablet screens as well."
-          description2="The javascript was both fun and a little bit challenging to complete. Making helper functions makes it easier to read the code and keep adding features."
+          description="Used unique border radius styling, added a scoreboard, and ensured mobile/tablet compatibility. JavaScript was fun and challenging; helper functions improved readability."
           siteLink={rockPaperLink}
           githubLink={rockPaperGitHub}
           badges={["javascript", "git", "css"]}
@@ -76,8 +73,7 @@ function Projects() {
         <ProjectCard
           title="Restaurant Project"
           image={restaurantImage}
-          description="My page was having some performance issues due to large image sizes. I remade my site to fix these issues and to use more semantic html so that my site can be more maintainable. I also made my site responsive as it was lacking in that category before."
-          description2="My favorite feature is the cool Dark Mode feature that remains persistent. I also changed the styling of my site as I felt it was kinda lacking in looks"
+          description="Multipage site showcasing my CSS skills. Improved performance with smaller images and semantic HTML. Made the site responsive, added persistent Dark Mode, and updated styling."
           siteLink={restaurantLink}
           githubLink={restaurantGitHub}
           badges={["html", "css", "javascript", "git"]}
@@ -85,8 +81,7 @@ function Projects() {
         <ProjectCard
           title="Weather API Project"
           image={weatherImage}
-          description="This is my first project working with APIs. It was challenging trying to understand how to select certain data from the JSON recieved, but it got interesting once I started to comprehend. I expiremented with some glassmorphism and other cool CSS tricks."
-          description2="I am still new to working with APIs but I will continue practicing as I understand that working with APIs is a key skill."
+          description="First API project. It was challenging trying to understand the syntax of Async Javascript. Experimented with glassmorphism and CSS tricks. Will continue practicing API skills."
           siteLink={weatherLink}
           githubLink={weatherGitHub}
           badges={["html", "css", "javascript", "git"]}
@@ -94,8 +89,7 @@ function Projects() {
         <ProjectCard
           title="Kreativstorm Group Project"
           image={kreativstormImage}
-          description="This was a group project that I worked on as part of Kreativstorms Front End training Program. This program had students from all over the world and so it was challenging to setup meetings since we all lived in different countries."
-          description2="I had fun meeting people from different backgrounds and cultures all working hard to be Front End Developers just like me. I was in charge of the Matches page for this site"
+          description="Group project in Kreativstorm's Front End training with international students. Enjoyed collaborating across cultures. Responsible for creating the 'Matches' page."
           siteLink={kreativstormLink}
           githubLink={kreativstormGitHub}
           badges={["html", "css", "git"]}
@@ -103,32 +97,28 @@ function Projects() {
         <ProjectCard
           title="Leaving Earth Game"
           video={rocketGameVideo}
-          description="Making my own game was one of my favorite projects to work on. Players customize their own rocket ship and must navigate it through dangerous asteroids in space."
-          description2="This project showcases my proficiency in game development using Unity, C#, Visual Studio, and Git/GitHub. I also made all of the art for this game."
+          description="Game Dev Project. Designed and developed my own art and gameplay. Very fun and challenging"
           githubLink={rocketGameGitHub}
           badges={["Unity", "C#", "Adobe Fresco", "git"]}
         ></ProjectCard>
         <ProjectCard
           title="Kick Returner Game"
           video={footballGameVideo}
-          description="Through this Group Project, I further developed skills in project management, teamwork, and communication. I learned the importance of version control and clean code. Additionally, I acquired valuable experience in implementing game mechanics and ensuring a polished user experience."
-          description2="My groupmates and I leveled up our abilities to troubleshoot and debug."
+          description="With this Game Dev Group Project, I leveled up my project management, teamwork, and communication skills. Emphasized version control, clean code, and polished user experience."
           githubLink={footballGameGitHub}
           badges={["Unity", "C#", "git"]}
         ></ProjectCard>
         <ProjectCard
           title="Roll Character Menu"
           video={gameMenuVideo}
-          description="This project was my first introduction to C# scripting and JSON. Here I demonstrate my ability to work with various types of input fields and user provided data to make a Dungeons and Dragons style Roll Character menu."
-          description2="I gained experience in designing intuitive and user friendly interfaces. All the art in this project is original."
+          description="My first C# and JSON project: Designed a Dungeons and Dragons style Roll Character menu. Created original art and focused on intuitive interface design."
           githubLink={gameMenuGitHub}
           badges={["Unity", "C#", "Adobe Fresco", "git"]}
         ></ProjectCard>
         <ProjectCard
           title="Heat Wave Detector"
           video={heatProjectVideo}
-          description="This project was my first introduction to Arduino boards. This was a group project and although our final code was very simple, it was both challenging and fun learning about all the hardware mistakes we made along the way."
-          description2="My groupmates and I acquired skills in problem-solving, research, and adaptability with this project as we encountered numerous challenges while working with new parts and technologies."
+          description="My first Arduino project in a group setting. Learned problem-solving, research, and adaptability while overcoming hardware challenges."
           badges={["Arduino", "C++"]}
         ></ProjectCard>
       </div>

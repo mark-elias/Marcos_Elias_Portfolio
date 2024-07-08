@@ -40,51 +40,47 @@ function ProjectCard({
     }
   }
   return (
-    <div className="rounded-2xl shadow-2xl border-blue-600 border-1 w-96">
-      <div className="relative w-full h-48">
+    <div className="rounded-2xl shadow-2xl w-[400px] h-[425px] md:h-[450px] bg-slate-50">
+      <div className="w-full h-[125px] md:h-[175px]">
         {image && (
           <img
             src={image}
             alt={title}
-            className=" mb-2 rounded-t-2xl w-full h-full object-cover"
+            className="rounded-t-2xl w-full h-full object-cover"
           />
         )}
         {video && (
           <video
             src={video}
             controls
-            className="rounded-t-2xl mb-2 w-full h-full object-cover"
+            className="rounded-t-2xl w-full h-full object-cover"
           >
             Your browser does not support the video tag.
           </video>
         )}
       </div>
 
-      <div className="p-2">
-        <h3 className="text-blue-600 text-center text-xl mb-3">{title}</h3>
-        <p className="font-normal mb-2 text-sm">{description}</p>
-        <p className="font-normal text-sm">{description2}</p>
+      <div className="px-5">
+        <h3 className="text-center">{title}</h3>
+        <p>{description}</p>
+        {/* <p>{description2}</p> */}
         <div className="flex flex-row gap-6 my-3">
           {siteLink && (
-            <a href={siteLink} target="_blank" className="font-normal text-sm">
+            <a href={siteLink} target="_blank">
               View Website
             </a>
           )}
           {githubLink && (
-            <a
-              href={githubLink}
-              target="_blank"
-              className="font-normal text-sm"
-            >
+            <a href={githubLink} target="_blank">
               GitHub Repo
             </a>
           )}
         </div>
-        <p className="text-sm font-normal">Made with:</p>
+        <p>Made with:</p>
         {badges?.map((element) => (
           <span
             key={element}
-            className={`mr-1 px-2 py-1 text-sm font-normal rounded-lg + ${badgeMaker(
+            className={`mr-1 px-2 py-1 rounded-lg text-sm + ${badgeMaker(
               element
             )}`}
           >
