@@ -38,7 +38,7 @@ function ProjectCard({
     }
   }
   return (
-    <div className="rounded-2xl shadow-2xl w-[400px] h-[425px] md:h-[450px] bg-slate-50">
+    <div className="rounded-2xl shadow-2xl w-[350px] h-[400px] md:h-[450px] bg-slate-50 border-[2px] border-slate-200 mb-5">
       <div className="w-full h-[125px] md:h-[175px]">
         {image && (
           <img
@@ -59,7 +59,7 @@ function ProjectCard({
       </div>
 
       <div className="px-5">
-        <h3 className="text-center">{title}</h3>
+        <h3>{title}</h3>
         <p>{description}</p>
         <div className="flex flex-row gap-6 my-3">
           {siteLink && (
@@ -77,7 +77,7 @@ function ProjectCard({
         {badges?.map((element) => (
           <span
             key={element}
-            className={`mr-1 px-2 py-1 rounded-lg text-sm + ${badgeMaker(
+            className={`mr-1 px-2 py-1 rounded text-sm + ${badgeMaker(
               element
             )}`}
           >

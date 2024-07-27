@@ -1,11 +1,11 @@
 import ProjectCard from "./ProjectCard";
 // ========== Media Imports
 // Images
+import portfolioImage from "../Assets/images/NewPortfolioSite.png";
 import budgeterImage from "../Assets/images/screenshot_BudgeterProject.png";
 import colorPickerImage from "../Assets/images/colorPickerScreenShot.png";
 import rockPaperImage from "../Assets/images/RockPaperScissors_screenshot.png";
 import restaurantImage from "../Assets/images/RestaurantProject.png";
-// import portfolioImage from "./Assets/images/screenshot_portfolioWebsite.png";
 import weatherImage from "../Assets/images/WeatherAPI_Project.png";
 import kreativstormImage from "../Assets/images/Kreativstorm_GroupProject_Screenshot.png";
 // Vidoes
@@ -16,6 +16,9 @@ import heatProjectVideo from "../Assets/videos/Project_Heat.mp4";
 
 function Projects() {
   // ======= Links
+  const portfolioLink = "https://marcoseliasportfolio.com";
+  const portfolioGitHub =
+    "https://github.com/mark-elias/Marcos_Elias_Portfolio";
   const budgeterLink = "https://mark-elias.github.io/Budgeter.github.io/";
   const budgeterGitHub = "https://github.com/mark-elias/Budgeter.github.io";
   const pickerLink = "https://mark-elias.github.io/ColorPicker.github.io/";
@@ -45,7 +48,15 @@ function Projects() {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <div className="flex flex-row flex-wrap gap-8">
+      <div className="flex flex-row flex-wrap gap-6 justify-center">
+        <ProjectCard
+          title="Portfolio Site"
+          image={portfolioImage}
+          description="Remade my portfolio site with React, Tailwind, and TypeScript. This way it is easier to maintain and keep updating"
+          siteLink={portfolioLink}
+          githubLink={portfolioGitHub}
+          badges={["react", "vite", "typescript", "tailwind", "git", "rEaCt"]}
+        ></ProjectCard>
         <ProjectCard
           title="React Budgeter"
           image={budgeterImage}
