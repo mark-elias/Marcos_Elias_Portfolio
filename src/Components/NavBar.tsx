@@ -19,7 +19,7 @@ function NavBar({ siteName, listItems }: Props) {
         </Link>
       </h1>
       <div>
-        <ul className="flex justify-evenly gap-10">
+        <ul className="flex justify-evenly gap-5 sm:gap-10">
           {listItems.map((element) => (
             <li key={element}>
               <Link

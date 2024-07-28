@@ -55,7 +55,7 @@ function Projects() {
           description="Remade my portfolio site with React, Tailwind, and TypeScript. This way it is easier to maintain and keep updating"
           siteLink={portfolioLink}
           githubLink={portfolioGitHub}
-          badges={["react", "vite", "typescript", "tailwind", "git", "rEaCt"]}
+          badges={["react", "vite", "typescript", "tailwind", "git"]}
         ></ProjectCard>
         <ProjectCard
           title="React Budgeter"

@@ -18,8 +18,8 @@
     h3{
         @apply font-medium text-lg text-blue-600 mt-3;
     }
-    section{
-        @apply p-5 px-10;
+    section{ 
+        @apply p-5 sm:p-5 sm:px-10;
     }
     p{
         @apply mb-1;
