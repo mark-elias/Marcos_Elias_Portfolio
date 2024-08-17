@@ -48,7 +48,15 @@ export const projects = [
       "Game discovery project where you can filter and search for games. Uses Custom and Generic hooks",
     siteLink: gameHubLink,
     gitHubLink: gameHubGitHub,
-    badges: ["react", "typescript", "chakraUI", "git", "vercel", "API", "axios", "node", "mongoDB"],
+    badges: [
+      "react",
+      "typescript",
+      "chakraUI",
+      "git",
+      "vercel",
+      "API",
+      "axios",
+    ],
   },
   {
     title: "Portfolio Site",
@@ -107,7 +115,8 @@ export const projects = [
   {
     title: "Leaving Earth Game",
     video: leavingVideo,
-    description: "",
+    description:
+      "Game Dev Project. Designed and developed my own art and gameplay. Very fun and challenging",
     gitHubLink: leavingGitHub,
     badges: ["Unity", "C#", "Adobe Fresco", "git"],
   },
@@ -124,7 +133,7 @@ export const projects = [
     video: gameMenuVideo,
     description:
       "My first C# and JSON project: Designed a Dungeons and Dragons style Roll Character menu. Created original art and focused on intuitive interface design.",
-    gitHubLink: gameHubGitHub,
+    gitHubLink: gameMenuGitHub,
     badges: ["Unity", "C#", "Adobe Fresco", "git"],
   },
   {
