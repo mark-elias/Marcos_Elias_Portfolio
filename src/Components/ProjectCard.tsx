@@ -33,6 +33,10 @@ function ProjectCard({
       return "bg-orange-500 text-white";
     } else if (badge === "css") {
       return "bg-blue-700 text-white";
+    } else if (badge === "vercel") {
+      return "bg-slate-800 text-white";
+    } else if (badge === "chakra") {
+      return "bg-teal-500 text-white";
     } else {
       return "bg-green-500 text-white";
     }
@@ -74,16 +78,18 @@ function ProjectCard({
           )}
         </div>
         <p>Made with:</p>
-        {badges?.map((element) => (
-          <span
-            key={element}
-            className={`mr-1 px-2 py-1 rounded text-sm + ${badgeMaker(
-              element
-            )}`}
-          >
-            {element}
-          </span>
-        ))}
+        <div className="flex flex-wrap">
+          {badges?.map((element) => (
+            <span
+              key={element}
+              className={`mr-1 mb-1 px-2 py-1 rounded text-sm + ${badgeMaker(
+                element
+              )}`}
+            >
+              {element}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -3,11 +3,11 @@ import ProjectCard from "./ProjectCard";
 // Images
 import portfolioImage from "../Assets/images/NewPortfolioSite.png";
 import budgeterImage from "../Assets/images/screenshot_BudgeterProject.png";
-import colorPickerImage from "../Assets/images/colorPickerScreenShot.png";
 import rockPaperImage from "../Assets/images/RockPaperScissors_screenshot.png";
 import restaurantImage from "../Assets/images/RestaurantProject.png";
 import weatherImage from "../Assets/images/WeatherAPI_Project.png";
 import kreativstormImage from "../Assets/images/Kreativstorm_GroupProject_Screenshot.png";
+import gameHubImage from "../Assets/images/GameHub.png";
 // Vidoes
 import rocketGameVideo from "../Assets/videos/LeavingEarth_Gameplay.mp4";
 import footballGameVideo from "../Assets/videos/GroupProject_KickReturner - Made with Clipchamp.mp4";
@@ -21,8 +21,6 @@ function Projects() {
     "https://github.com/mark-elias/Marcos_Elias_Portfolio";
   const budgeterLink = "https://mark-elias.github.io/Budgeter.github.io/";
   const budgeterGitHub = "https://github.com/mark-elias/Budgeter.github.io";
-  const pickerLink = "https://mark-elias.github.io/ColorPicker.github.io/";
-  const pickerGitHub = "https://github.com/mark-elias/ColorPicker.github.io";
   const rockPaperLink =
     "https://mark-elias.github.io/RockPaperScissors.github.io/";
   const rockPaperGitHub =
@@ -45,18 +43,37 @@ function Projects() {
   const footballGameGitHub =
     "https://github.com/mark-elias/CS583_S22_Group7_KickoffReturn";
 
+  const gameHubLink = "https://game-hub-project-kappa.vercel.app/";
+  const gameHubGitHub = "https://github.com/mark-elias/game-hub";
+
   return (
     <section id="projects">
       <h2>Projects</h2>
       <div className="flex flex-row flex-wrap gap-6 justify-center">
         <ProjectCard
+          title="Game Hub"
+          image={gameHubImage}
+          description="Game discovery project where you can filter and search for games. Uses Custom and Generic hooks"
+          siteLink={gameHubLink}
+          githubLink={gameHubGitHub}
+          badges={[
+            "react",
+            "typescript",
+            "chakra",
+            "git",
+            "vercel",
+            "API",
+            "axios",
+          ]}
+        ></ProjectCard>
+        {/* <ProjectCard
           title="Portfolio Site"
           image={portfolioImage}
           description="Remade my portfolio site with React, Tailwind, and TypeScript. This way it is easier to maintain and keep updating"
           siteLink={portfolioLink}
           githubLink={portfolioGitHub}
           badges={["react", "vite", "typescript", "tailwind", "git"]}
-        ></ProjectCard>
+        ></ProjectCard> */}
         <ProjectCard
           title="React Budgeter"
           image={budgeterImage}
@@ -64,14 +81,6 @@ function Projects() {
           siteLink={budgeterLink}
           githubLink={budgeterGitHub}
           badges={["react", "vite", "git", "tailwind"]}
-        ></ProjectCard>
-        <ProjectCard
-          title="React Color Picker"
-          image={colorPickerImage}
-          description="My first React project. I initially felt overwhelmed by React, but I am starting to understand its benefits. Successfully deployed React + Vite to GitHub."
-          siteLink={pickerLink}
-          githubLink={pickerGitHub}
-          badges={["react", "vite", "git", "css"]}
         ></ProjectCard>
         <ProjectCard
           title="JS RockPaperScissors Game"
@@ -82,7 +91,7 @@ function Projects() {
           badges={["javascript", "git", "css"]}
         ></ProjectCard>
         <ProjectCard
-          title="Restaurant Project"
+          title="CSS Restaurant Project"
           image={restaurantImage}
           description="Multipage site showcasing my CSS skills. Improved performance with smaller images and semantic HTML. Made the site responsive, added persistent Dark Mode, and updated styling."
           siteLink={restaurantLink}
@@ -95,7 +104,7 @@ function Projects() {
           description="First API project. It was challenging trying to understand the syntax of Async Javascript. Experimented with glassmorphism and CSS tricks. Will continue practicing API skills."
           siteLink={weatherLink}
           githubLink={weatherGitHub}
-          badges={["html", "css", "javascript", "git"]}
+          badges={["html", "css", "javascript", "git", "API"]}
         ></ProjectCard>
         <ProjectCard
           title="Kreativstorm Group Project"
