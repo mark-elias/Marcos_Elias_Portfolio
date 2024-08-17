@@ -48,7 +48,7 @@ export const projects = [
       "Game discovery project where you can filter and search for games. Uses Custom and Generic hooks",
     siteLink: gameHubLink,
     gitHubLink: gameHubGitHub,
-    badges: ["react", "typescript", "chakra", "git", "vercel", "API", "axios", "node", "mongoDB"],
+    badges: ["react", "typescript", "chakraUI", "git", "vercel", "API", "axios", "node", "mongoDB"],
   },
   {
     title: "Portfolio Site",

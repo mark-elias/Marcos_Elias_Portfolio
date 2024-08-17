@@ -10,17 +10,17 @@ interface Props {
 
 const badgeStyles: Record<string, string> = {
   react: "bg-slate-700 text-[#61DBFB]",
-  javascript: "bg-amber-300 text-black",
-  tailwind: "bg-cyan-500 text-white",
-  git: "bg-orange-500 text-white",
+  javascript: "bg-[#F0DB4F] text-[#323330]",
+  tailwind: "bg-sky-500 text-white",
+  git: "bg-[#f1502f] text-white",
   typescript: "bg-[#3178c6] text-white",
-  html: "bg-orange-500 text-white",
-  css: "bg-blue-700 text-white",
+  html: "bg-[#f06529] text-white",
+  css: "bg-[#264de4] text-[#ebebeb]",
   vercel: "bg-slate-800 text-white",
-  chakra: "bg-teal-500 text-white",
+  chakraUI: "bg-teal-500 text-white",
   node: "bg-[#333333] text-[#6cc24a]",
   mongoDB: "bg-[#E8E7D5] text-[#3FA037]",
-  API: "bg-violet-700 text-white"
+  API: "bg-violet-700 text-white",
 };
 // 333333
 // 6cc24a
