@@ -7,6 +7,24 @@ interface Props {
   githubLink?: string;
   badges: string[];
 }
+
+const badgeStyles: Record<string, string> = {
+  react: "bg-slate-700 text-[#61DBFB]",
+  javascript: "bg-amber-300 text-black",
+  tailwind: "bg-cyan-500 text-white",
+  git: "bg-orange-500 text-white",
+  typescript: "bg-[#3178c6] text-white",
+  html: "bg-orange-500 text-white",
+  css: "bg-blue-700 text-white",
+  vercel: "bg-slate-800 text-white",
+  chakra: "bg-teal-500 text-white",
+  node: "bg-[#333333] text-[#6cc24a]",
+  mongoDB: "bg-[#E8E7D5] text-[#3FA037]",
+  API: "bg-violet-700 text-white"
+};
+// 333333
+// 6cc24a
+
 function ProjectCard({
   title,
   image,
@@ -17,30 +35,9 @@ function ProjectCard({
   badges,
 }: Props) {
   function badgeMaker(badge: string) {
-    if (badge === "react") {
-      return "bg-cyan-400 text-slate-700";
-    } else if (badge === "javascript") {
-      return "bg-amber-300 text-black";
-    } else if (badge === "tailwind") {
-      return "bg-cyan-500 text-white";
-    } else if (badge === "vite") {
-      return "bg-indigo-500 text-yellow-300";
-    } else if (badge === "git") {
-      return "bg-orange-500 text-white";
-    } else if (badge === "typescript") {
-      return "bg-blue-600 text-white";
-    } else if (badge === "html") {
-      return "bg-orange-500 text-white";
-    } else if (badge === "css") {
-      return "bg-blue-700 text-white";
-    } else if (badge === "vercel") {
-      return "bg-slate-800 text-white";
-    } else if (badge === "chakra") {
-      return "bg-teal-500 text-white";
-    } else {
-      return "bg-green-500 text-white";
-    }
+    return badgeStyles[badge] || "bg-gray-400 text-black";
   }
+
   return (
     <div className="rounded-2xl shadow-2xl w-[350px] h-[400px] md:h-[450px] bg-slate-50 border-[2px] border-slate-200 mb-5">
       <div className="w-full h-[125px] md:h-[175px]">
