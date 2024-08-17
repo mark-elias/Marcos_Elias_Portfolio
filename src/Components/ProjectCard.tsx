@@ -4,7 +4,7 @@ interface Props {
   video?: string;
   description: string;
   siteLink?: string;
-  githubLink?: string;
+  gitHubLink?: string;
   badges: string[];
 }
 
@@ -31,10 +31,12 @@ function ProjectCard({
   video,
   description,
   siteLink,
-  githubLink,
+  gitHubLink,
   badges,
 }: Props) {
   function badgeMaker(badge: string) {
+    console.log('GitHub Link:', gitHubLink);
+
     return badgeStyles[badge] || "bg-gray-400 text-black";
   }
 
@@ -68,8 +70,8 @@ function ProjectCard({
               View Website
             </a>
           )}
-          {githubLink && (
-            <a href={githubLink} target="_blank">
+          {gitHubLink && (
+            <a href={gitHubLink} target="_blank">
               GitHub Repo
             </a>
           )}
