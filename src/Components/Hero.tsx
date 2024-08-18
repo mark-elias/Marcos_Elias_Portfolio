@@ -1,3 +1,6 @@
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+
 function Hero() {
   return (
     <section
@@ -10,15 +13,21 @@ function Hero() {
       </h1>
       <p>Email: mark4elias@gmail.com</p>
       <div className="flex flex-row justify-between gap-5">
-        <a href="https://github.com/mark-elias" target="_blank">
-          GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/marcos-elias-382484226/"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
+        <div>
+          <FaGithubSquare className="inline mr-1 mb-1" color="#ec4899" />
+          <a href="https://github.com/mark-elias" target="_blank">
+            GitHub
+          </a>
+        </div>
+        <div>
+          <FaLinkedin className="inline mr-1 mb-1" color="#ec4899" />
+          <a
+            href="https://www.linkedin.com/in/marcos-elias-382484226/"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </div>
       </div>
     </section>
   );

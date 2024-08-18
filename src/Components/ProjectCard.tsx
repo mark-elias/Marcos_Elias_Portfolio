@@ -1,3 +1,6 @@
+import { FaGithubSquare } from "react-icons/fa";
+import { TbWorldWww } from "react-icons/tb";
+
 interface Props {
   title: string;
   image?: string;
@@ -35,8 +38,6 @@ function ProjectCard({
   badges,
 }: Props) {
   function badgeMaker(badge: string) {
-    console.log('GitHub Link:', gitHubLink);
-
     return badgeStyles[badge] || "bg-gray-400 text-black";
   }
 
@@ -67,11 +68,13 @@ function ProjectCard({
         <div className="flex flex-row gap-6 my-3">
           {siteLink && (
             <a href={siteLink} target="_blank">
+              <TbWorldWww className="inline mr-1 mb-1" />
               View Website
             </a>
           )}
           {gitHubLink && (
             <a href={gitHubLink} target="_blank">
+              <FaGithubSquare className="inline mr-1 mb-1" />
               GitHub Repo
             </a>
           )}
