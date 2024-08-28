@@ -6,6 +6,8 @@ function Certificates() {
         <li>Kreativstorm Frontend Development Hands-on Training Program</li>
         <li>CodePath Intro to Web Development</li>
         <li>Code with Mosh - HTML & CSS Course</li>
+        <li>Code with Mosh - Ultimate JavaScript Fundamentals</li>
+        <li>Code with Mosh - React 18 for Beginners</li>
       </ul>
     </section>
   );
