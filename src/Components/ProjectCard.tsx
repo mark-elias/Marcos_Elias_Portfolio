@@ -24,6 +24,10 @@ const badgeStyles: Record<string, string> = {
   node: "bg-[#333333] text-[#6cc24a]",
   mongoDB: "bg-[#E8E7D5] text-[#3FA037]",
   API: "bg-violet-700 text-white",
+  validation: "bg-violet-700 text-white",
+  zod: "bg-[#0C4A6E] text-[#00BFFF]",
+  react_hook_form: "bg-pink-400 text-white ",
+
 };
 // 333333
 // 6cc24a

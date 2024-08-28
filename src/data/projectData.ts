@@ -1,7 +1,7 @@
 // ========== Media Imports
 // Images
 import portfolioImage from "../Assets/images/NewPortfolioSite.png";
-import budgeterImage from "../Assets/images/screenshot_BudgeterProject.png";
+import expenseTrackerImage from "../Assets/images/expenseTracker-screenshot.png";
 import rockPaperImage from "../Assets/images/RockPaperScissors_screenshot.png";
 import restaurantImage from "../Assets/images/RestaurantProject.png";
 import weatherImage from "../Assets/images/WeatherAPI_Project.png";
@@ -16,8 +16,8 @@ import heatProjectVideo from "../Assets/videos/Project_Heat.mp4";
 // ======= Links
 const portfolioLink = "https://marcoseliasportfolio.com";
 const portfolioGitHub = "https://github.com/mark-elias/Marcos_Elias_Portfolio";
-const budgeterLink = "https://mark-elias.github.io/Budgeter.github.io/";
-const budgeterGitHub = "https://github.com/mark-elias/Budgeter.github.io";
+const expenseLink = "https://react-budgeter-project.vercel.app/";
+const expenseGitHub = "https://github.com/mark-elias/Budgeter.github.io";
 const rockPaperLink =
   "https://mark-elias.github.io/RockPaperScissors.github.io/";
 const rockPaperGitHub =
@@ -59,6 +59,23 @@ export const projects = [
     ],
   },
   {
+    title: "Expense Tracker",
+    image: expenseTrackerImage,
+    description:
+      "Uses React Hook Form and Zod for Validation. You can add, sort, and delete expenses",
+    siteLink: expenseLink,
+    gitHubLink: expenseGitHub,
+    badges: [
+      "react",
+      "typescript",
+      "tailwind",
+      "git",
+      "zod",
+      "react_hook_form",
+      "validation",
+    ],
+  },
+  {
     title: "Portfolio Site",
     image: portfolioImage,
     description:
@@ -66,15 +83,6 @@ export const projects = [
     siteLink: portfolioLink,
     gitHubLink: portfolioGitHub,
     badges: ["react", "typescript", "tailwind", "git"],
-  },
-  {
-    title: "React Budgeter",
-    image: budgeterImage,
-    description:
-      "Budgeting project using an array of objects, React, useState, and Tailwind CSS. Implemented sorting by categories and displayed objects as list items.",
-    siteLink: budgeterLink,
-    gitHubLink: budgeterGitHub,
-    badges: ["react", "git", "tailwind"],
   },
   {
     title: "JS RockPaperScissors Game",
