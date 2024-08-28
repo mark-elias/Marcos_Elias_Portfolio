@@ -27,7 +27,7 @@ function NavBar({ siteName, listItems }: Props) {
                 smooth={true}
                 duration={500}
                 offset={-80}
-                className="cursor-pointer font-semibold hover:text-blue-600 text-black no-underline"
+                className="cursor-pointer font-semibold text-lg hover:text-blue-600 text-black no-underline"
               >
                 {element}
               </Link>

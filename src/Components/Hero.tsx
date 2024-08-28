@@ -7,7 +7,7 @@ function Hero() {
       id="hero"
       className="flex flex-col justify-evenly items-center mt-5"
     >
-      <em>Future Web Dev</em>
+      <em>Full-Stack Web Dev</em>
       <h1 className="mb-3 text-lg md:text-4xl">
         hello world, my name is <em className="text-blue-600">Marcos</em>
       </h1>

@@ -97,7 +97,7 @@ export const projects = [
     title: "CSS Restaurant Project",
     image: restaurantImage,
     description:
-      "Multipage site showcasing my CSS skills. Improved performance with smaller images and semantic HTML. Made the site responsive, added persistent Dark Mode, and updated styling.",
+      "Multipage site showcasing my CSS skills. Improved performance with smaller images and semantic HTML. Made the site responsive, added persistent Dark Mode",
     siteLink: restaurantLink,
     gitHubLink: restaurantGitHub,
     badges: ["html", "css", "javascript", "git"],
