@@ -6,11 +6,12 @@ function Skills() {
         <li>Javascript, Typescript, HTML, CSS</li>
         <li>Java, C#, C++, Python</li>
         <li>Frameworks: React</li>
+        <li>React Ecosystem: Reack Hook Form, Zod, React Query, Axios, React Router, Vite</li>
         <li>Version Control: Git, GitHub, GitLab</li>
         <li>
-          CSS/UI Frameworks: Tailwind, ChakraUI, Bootstrap, Miligram
+          CSS Frameworks: Tailwind, ChakraUI, Bootstrap, Miligram
         </li>
-        <li>Backend: NodeJS, ExpressJS</li>
+        <li>Backend: NodeJS, ExpressJS, Mongoose</li>
         <li>Databases: MongoDB</li>
         {/* <li>Responsive Design</li> */}
         <li>Unity Game Development</li>
