@@ -13,7 +13,6 @@ import leavingVideo from "../Assets/videos/LeavingEarth_Gameplay.mp4";
 import kickVideo from "../Assets/videos/GroupProject_KickReturner - Made with Clipchamp.mp4";
 import gameMenuVideo from "../Assets/videos/RollCharacter_Video - Made with Clipchamp.mp4";
 import heatProjectVideo from "../Assets/videos/Project_Heat.mp4";
-import { MdDescription } from "react-icons/md";
 
 // ======= Links
 const portfolioLink = "https://marcoseliasportfolio.com";
@@ -60,7 +59,7 @@ export const projects = [
       "TanStackQuery",
       "validation",
       "zod",
-      "joi"
+      "joi",
     ],
   },
   {
