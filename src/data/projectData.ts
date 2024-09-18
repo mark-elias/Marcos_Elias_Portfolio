@@ -7,11 +7,13 @@ import restaurantImage from "../Assets/images/RestaurantProject.png";
 import weatherImage from "../Assets/images/WeatherAPI_Project.png";
 import kreativstormImage from "../Assets/images/Kreativstorm_GroupProject_Screenshot.png";
 import gameHubImage from "../Assets/images/GameHub.png";
+import mern_bookstore from "../Assets/images/MERN_Bookstore.png";
 // Vidoes
 import leavingVideo from "../Assets/videos/LeavingEarth_Gameplay.mp4";
 import kickVideo from "../Assets/videos/GroupProject_KickReturner - Made with Clipchamp.mp4";
 import gameMenuVideo from "../Assets/videos/RollCharacter_Video - Made with Clipchamp.mp4";
 import heatProjectVideo from "../Assets/videos/Project_Heat.mp4";
+import { MdDescription } from "react-icons/md";
 
 // ======= Links
 const portfolioLink = "https://marcoseliasportfolio.com";
@@ -41,6 +43,26 @@ const gameHubLink = "https://game-hub-project-kappa.vercel.app/";
 const gameHubGitHub = "https://github.com/mark-elias/game-hub";
 
 export const projects = [
+  {
+    title: "MERN Bookstore",
+    image: mern_bookstore,
+    description:
+      "MERN stack project with CRUD operations, validation, TypeScript, and TanStack Query. 🚧 Still in progress, almost complete",
+    badges: [
+      "mongoDB",
+      "express",
+      "react",
+      "node",
+      "typescript",
+      "git",
+      "tailwind",
+      "API",
+      "TanStackQuery",
+      "validation",
+      "zod",
+      "joi"
+    ],
+  },
   {
     title: "Game Hub",
     image: gameHubImage,

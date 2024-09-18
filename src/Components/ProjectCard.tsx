@@ -19,6 +19,7 @@ const badgeStyles: Record<string, string> = {
   typescript: "bg-[#3178c6] text-white",
   html: "bg-[#f06529] text-white",
   css: "bg-[#264de4] text-[#ebebeb]",
+  express: "bg-slate-800 text-white",
   vercel: "bg-slate-800 text-white",
   chakraUI: "bg-teal-500 text-white",
   node: "bg-[#333333] text-[#6cc24a]",
@@ -27,7 +28,6 @@ const badgeStyles: Record<string, string> = {
   validation: "bg-violet-700 text-white",
   zod: "bg-[#0C4A6E] text-[#00BFFF]",
   react_hook_form: "bg-pink-400 text-white ",
-
 };
 // 333333
 // 6cc24a
@@ -83,7 +83,7 @@ function ProjectCard({
             </a>
           )}
         </div>
-        <p>Made with:</p>
+        {/* <p>Made with:</p> */}
         <div className="flex flex-wrap">
           {badges?.map((element) => (
             <span
