@@ -37,16 +37,19 @@ const leavingGitHub = "https://github.com/mark-elias/S22_Proj_2A_Elias_Marcos";
 const gameMenuGitHub = "https://github.com/mark-elias/S22_Proj_2A_Elias_Marcos";
 const kickGitHub =
   "https://github.com/mark-elias/CS583_S22_Group7_KickoffReturn";
-
 const gameHubLink = "https://game-hub-project-kappa.vercel.app/";
 const gameHubGitHub = "https://github.com/mark-elias/game-hub";
+const mernBookstore_Link = "https://mern-bookstore-olive.vercel.app/";
+const mernBookstore_GitHub = "https://github.com/mark-elias/MERN_Bookstore";
 
 export const projects = [
   {
     title: "MERN Bookstore",
     image: mern_bookstore,
     description:
-      "MERN stack project with CRUD operations, validation, TypeScript, and TanStack Query. 🚧 Still in progress, almost complete",
+      "MERN stack project with CRUD operations, validation, TypeScript, and TanStack Query",
+    siteLink: mernBookstore_Link,
+    gitHubLink: mernBookstore_GitHub,
     badges: [
       "mongoDB",
       "express",
