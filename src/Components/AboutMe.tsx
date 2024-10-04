@@ -2,27 +2,25 @@ function AboutMe() {
   return (
     <section id="about">
       <h2>About Me</h2>
-      <p className="mb-3">
-        Hello, my name is Marcos and I am a Computer Science grad from SDSU 🎓.
-        My hobbies include watching sports 🏈, going to concerts 🎶, and playing
-        the guitar 🎸.
+      <p>
+        San Diego-based Full Stack Developer with expertise in building
+        responsive, user-friendly web applications using React, JavaScript,
+        TypeScript, and Node.js.
       </p>
-      <p className="mb-3">
-        Proficient in HTML, CSS, and JavaScript, I applied my knowledge in
-        CodePath’s Web Development course and Kreativstorm’s Front-End Training
-        Program. These experiences honed my skills and instilled best practices,
-        teamwork, and responsive web design techniques.
+      <p>
+        Skilled in developing REST APIs, fetching and managing data from APIs,
+        and handling databases with MongoDB and Mongoose.
       </p>
-      <p className="mb-3">
-        Additionally, I have a solid understanding of React, Tailwind CSS,
-        Typescript, and Git. I also have experience with NodeJS, ExpressJS, and
-        MongoDB. I am currently working on a MERN stack project and hope to
-        complete it soon.
+      <p>
+        {`Proficient in authentication, data validation (Joi, Zod, React Hook Form), and version control with Git.`}
       </p>
-      <p className="mb-3">
-        With a strong foundation in Front-End Web Development, I am eager to
-        apply my knowledge to real-world challenges. My adaptability and
-        determination make me well-suited for a fast-paced environment.
+      <p>
+        Experience using modern tools like Tailwind CSS, TanStack Query, and
+        React Router to create seamless web experiences.
+      </p>
+      <p className="mt-7">
+        🤠 Hobbies: Watching sports 🏈, going to concerts 🎶, and playing the
+        guitar 🎸
       </p>
     </section>
   );
