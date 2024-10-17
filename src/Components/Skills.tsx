@@ -4,43 +4,35 @@ function Skills() {
       <h2>Skills</h2>
       <ul className="list-disc">
         <li className="ml-5">
-          <span className="text-blue-600">Front-End:</span> Javascript,
-          Typescript, HTML, CSS
+          <span className="text-blue-600">Front-End:</span> HTML/CSS,
+          JavaScript, TypeScript, React.js
         </li>
         <li className="ml-5">
-          API's, Responsive Design, Chrome Dev Tools, Validation
-        </li>
-        <li className="ml-5">Java, C#, C++, Python</li>
-        <li className="ml-5">
-          <span className="text-blue-600">Frameworks/Libraries:</span> React
+          <span className="text-blue-600">Back-End & FullStack:</span> Node.js,
+          Express.js, Next.js
         </li>
         <li className="ml-5">
-          <span className="text-blue-600">React Ecosystem:</span> Vite, Reack
-          Hook Form, Zod, Axios, TanStack Query, React Router
+          <span className="text-blue-600">React.js & Next.js Ecosystem:</span>{" "}
+          React-Hook-Form, Zod, Axios, TanStack Query, React Router, NextAuth
         </li>
         <li className="ml-5">
-          <span className="text-blue-600">CSS Frameworks/Libraries:</span>{" "}
-          Tailwind, ChakraUI, Bootstrap, Miligram, DaisyUI
+          <span className="text-blue-600">CSS & Styling:</span> Tailwind,
+          ChakraUI, Bootstrap, Miligram, DaisyUI
         </li>
         <li className="ml-5">
-          <span className="text-blue-600">Version Control:</span> Git, GitHub,
-          GitLab
+          <span className="text-blue-600">Version Control:</span> Git, GitHub
         </li>
         <li className="ml-5">
-          <span className="text-blue-600">Deployment & Hosting:</span> GitHub
-          Pages, Hostinger, Vercel
+          <span className="text-blue-600">Databases:</span> MongoDB, mySQL,
+          PostgreSQL
         </li>
         <li className="ml-5">
-          <span className="text-blue-600">Back-End:</span> NodeJS, ExpressJS,
-          Mongoose
+          <span className="text-blue-600">ORMs:</span> Mongoose, Prisma
         </li>
         <li className="ml-5">
-          <span className="text-blue-600">Databases:</span> MongoDB
+          <span className="text-blue-600">Deployment & Hosting:</span> Vercel,
+          Hostinger, Render, GitHub Pages
         </li>
-        {/* <li>Responsive Design</li> */}
-        <li className="ml-5">Unity Game Development</li>
-        <li className="ml-5">Arduino Programming</li>
-        {/* <li>Bilingual (English, Spanish)</li> */}
       </ul>
     </section>
   );
