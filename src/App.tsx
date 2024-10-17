@@ -9,7 +9,7 @@ import Footer from "./Components/Footer";
 import Certificates from "./Components/Certificates";
 
 function App() {
-  const listItems = ["Education", "Experience", "Skills", "Projects"];
+  const listItems = ["Skills", "Education", "Experience", "Projects"];
 
   return (
     <>
@@ -17,9 +17,9 @@ function App() {
       <main className="">
         <Hero></Hero>
         <AboutMe></AboutMe>
+        <Skills></Skills>
         <Education></Education>
         <Experience></Experience>
-        <Skills></Skills>
         <Certificates></Certificates>
         <Projects></Projects>
       </main>

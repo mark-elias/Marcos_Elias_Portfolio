@@ -15,7 +15,7 @@ function AboutMe() {
         {`Proficient in authentication, data validation (Joi, Zod, React Hook Form), and version control with Git.`}
       </p>
       <p>
-        Experience using modern tools like Tailwind CSS, TanStack Query, and
+        Experience using modern tools like Next.js, Tailwind CSS, TanStack Query, and
         React Router to create seamless web experiences.
       </p>
       <p className="mt-7">

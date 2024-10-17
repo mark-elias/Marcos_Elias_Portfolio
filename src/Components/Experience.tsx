@@ -6,16 +6,16 @@ function Experience() {
       <p>Kreativstorm | August 2023 - October 2023</p>
       <ul className="list-disc">
         <li className="ml-5">
-          Received guidance from an industry professional to explore the latest
-          industry trends, technologies, and best practices.
+          Collaborated with international teams on group projects, using HTML,
+          CSS, and JavaScript to develop responsive frontend websites.
         </li>
         <li className="ml-5">
-          Improved on essential soft skills such as communication, leadership,
-          and teamwork.
+          Worked remotely with an industry expert, focusing on the importance of
+          communication, collabora- tion, and best practices in web development.
         </li>
         <li className="ml-5">
-          Implemented responsive design techniques to ensure optimal display on
-          various devices.
+          Utilized Git and GitHub for version control, enhancing teamwork and
+          code management in a remote, global environment.
         </li>
       </ul>
       <h3>Tutor</h3>
